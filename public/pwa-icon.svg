@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#1e3a8a" />
+    </linearGradient>
+    <!-- Accent Gradient -->
+    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0ea5e9" />
+    </linearGradient>
+    <!-- Gold / Star Gradient -->
+    <linearGradient id="gold-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <filter id="drop-shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#0f172a" flood-opacity="0.3" />
+    </filter>
+  </defs>
+
+  <!-- Ground Card Base with smooth rounded corner -->
+  <rect width="512" height="512" rx="128" fill="url(#bg-grad)" />
+
+  <!-- Inner ambient card border -->
+  <rect x="16" y="16" width="480" height="480" rx="112" fill="none" stroke="#60a5fa" stroke-width="6" stroke-opacity="0.15" />
+
+  <!-- Main Graphic Container with shadow -->
+  <g filter="url(#drop-shadow)">
+    <!-- Document Backdrop Symbol -->
+    <rect x="136" y="116" width="210" height="280" rx="20" fill="#ffffff" opacity="0.95" />
+    
+    <!-- Folded paper ear -->
+    <path d="M296,116 L346,166 L296,166 Z" fill="#e2e8f0" />
+    <path d="M296,116 L346,166 H316 C304.95,166 296,157.05 296,146 Z" fill="#cbd5e1" />
+
+    <!-- Stylized checkmark indicating success/done -->
+    <path d="M190,260 L240,310 L370,180" fill="none" stroke="url(#accent-grad)" stroke-width="40" stroke-linecap="round" stroke-linejoin="round" />
+    
+    <!-- Success Badge Star / Sparkle in corner -->
+    <path d="M370,290 L382,315 L408,320 L388,338 L394,364 L370,350 L346,364 L352,338 L332,320 L358,315 Z" fill="url(#gold-grad)" />
+
+    <!-- Abstract Document Text Indicators -->
+    <line x1="176" y1="200" x2="260" y2="200" stroke="#94a3b8" stroke-width="14" stroke-linecap="round" />
+    <line x1="176" y1="240" x2="220" y2="240" stroke="#94a3b8" stroke-width="14" stroke-linecap="round" />
+    <line x1="176" y1="360" x2="290" y2="360" stroke="#94a3b8" stroke-width="14" stroke-linecap="round" />
+  </g>
+</svg>
